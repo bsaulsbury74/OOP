@@ -9,7 +9,7 @@ def main():
 
    # Create a BankAccount object.
    savings = bc.BankAccount(start_bal)
-
+#instance of bank account class
    # Deposit the user's paycheck.
    pay = float(input('How much were you paid this week? '))
    print('I will deposit that into your account.')

@@ -20,8 +20,8 @@ class BankAccount:
       # from the account.
 
     def withdraw(self, amount):
-        if self.__balance >= amount:
-            self.__balance -= amount
+        if self.__balance >= abs(amount):
+            self.__balance -= abs(amount)
         else:
             print('Error: Insufficient funds')
 
@@ -35,3 +35,4 @@ class BankAccount:
 
     def __str__(self):
         return 'The balance is $' + format(self.__balance, ',.2f')
+        #allows us to return an attribute in customized way
